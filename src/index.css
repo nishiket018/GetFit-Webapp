@@ -1,0 +1,264 @@
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  
+  /* background-image: linear-gradient(to top red,black); */
+
+}
+
+.mainElement{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  background: linear-gradient(to right, #1e293b, #0f172a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+h1{
+  color: white;
+  
+}
+p{
+  font-family: inherit;
+}
+
+.heroContainer span{
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #60a5fa;
+}
+.heroContainer{
+  min-height: 100vh;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 560px;
+  margin: auto;
+}
+.heroContainer h1{
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+
+}
+.heroContainer .infoContainer{
+  font-size: 0.85rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 1rem;
+}
+.heroContainer .motoContainer{
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.heroContent{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.buttonUI{
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #60a5fa;
+  background-color: #020617;
+  color: white;
+  box-shadow: 3px 3px 0 0 #60a5fa;
+  margin: 3rem auto 0px auto;
+}
+.buttonUI:hover{
+  transform: translate(-3px,-3px);
+  transition: 200ms;
+  box-shadow: 6px 6px 0 0 #60a5fa;
+}
+.buttonUI i{
+  margin-left: 10px;
+}
+.generatorContainer{
+  min-height: 100vh;
+}
+.sectionContainer{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectionContent{
+  background-color: #020617;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.sectionContent h2{
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+/* .moved {
+  transform: translateY(100vh); 
+} */
+.sectionContent p{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85;
+}
+.sectionContent span{
+  color: #60a5fa;
+}
+.headerContent{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  max-width: 800px;
+  margin: 0px auto;
+  gap: 1.5rem;
+}
+/* .headerContent{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} */
+.headerContainer{
+  margin-top: 2.5rem;
+}
+.headerContainer p{
+  font-size: 1rem;
+  text-align: center;
+}
+.muscleType{
+  background: #020617;
+  padding:1.5rem ;
+  border: 1px solid transparent;
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0px auto ;
+  /* min-width: 560px; */
+  width: 80%;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.muscleType:hover{
+  border: 1px solid #60a5fa;
+
+}
+.muscleType i{
+  position: absolute;
+  right: 2rem; /* Inside the border */
+  top: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.headerContent .workoutType .active{
+  border:1px solid #60a5fa;
+}
+.headerContent .workoutType .dropdown{
+  display: flex;
+  flex-direction: column;
+  padding: 0.85rem 0px 0px 0px;
+}
+.dropdown p{
+  text-align: center;
+  margin: 0.5rem;
+  text-transform: capitalize;
+}
+.dropdown p:hover{
+  color: #60a5fa;
+  cursor: pointer;
+}
+.dropdown .activeModal{
+  color: #60a5fa;
+}
+
+.heading{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.heading p{
+  font-size: 3rem;
+  font-weight: 500;
+  color: #c3ceff65;
+}
+.heading h4{
+  font-size: 2.3rem;
+  font-weight: 400;
+} 
+.workoutType{
+  display: grid;
+  grid-row: 2;
+  gap: 2rem;
+}
+.workoutType button{
+  padding: 1.25rem 2rem;
+  color: white;
+  background-color: #020617;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+}
+
+.workoutType button:hover{
+  border: 1px solid #60a5fa;
+}
+.workoutType button p{
+  text-transform: capitalize;
+}
+.padd{
+  text-transform: capitalize;
+}
+@media (min-width:660px){
+  .mainElement{
+    font-size: 1rem;  
+  }
+  .heroContainer{
+    max-width: 1200px;
+  }
+  .heroContainer h1{
+    font-size: 6rem;
+  }
+  .heroContainer .infoContainer{
+    font-size: 1.3rem;
+  }
+  .heroContainer .motoContainer{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .sectionContent h2{
+    font-size: 3rem;
+  }
+  .sectionContent p{
+    font-size: 1.5rem;
+  }
+  .workoutType{
+    display: flex;
+    justify-content: center;
+  }
+  .muscleType{
+    min-width: 650px;
+  }
+}
